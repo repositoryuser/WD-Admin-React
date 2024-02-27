@@ -1,0 +1,469 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+.MyColorDiv {
+  position: absolute;
+  z-index: 999;
+}
+
+/* ----------overlay--------------- */
+.list-page-overlay {
+  background: transparent;
+  opacity: 0.6;
+  height: 100%;
+  width: 100%;
+  display: block;
+  z-index: 999;
+  pointer-events: none;
+}
+.list-page-overlay-visible {
+  display: block;
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+  z-index: 999999;
+  pointer-events: visible;
+}
+.setting-header {
+  display: block;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background-color: #f4f6f8;
+  padding: 10px 0 10px 10px;
+  border-bottom: 2px solid rgba(201, 204, 207, 1);
+  font-family: "Roboto", sans-serif;
+}
+#headerSettings,
+#headerSupport,
+#headerTutorials,
+#headerPlanUpgrade {
+  border: 1px solid rgba(140, 145, 150, 1);
+  margin-left: 15px;
+  margin-top: 5px;
+  background-color: white;
+  height: 35px;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  cursor: pointer;
+  left: 300px;
+  /* box-shadow: 1px 1px 1px #888888; */
+}
+#headerPlanUpgrade {
+  padding-left: 10px;
+  padding-right: 50px;
+  background-color: #008060;
+  color: white;
+  font-weight: 600;
+}
+#headerSettings:hover,
+#headerSupport:hover,
+#headerTutorials:hover {
+  background-color: ghostwhite;
+}
+#headerPlanUpgrade:hover {
+  background-color: #008060;
+}
+/* ribbon */
+
+.ribbon {
+  position: absolute;
+  right: var(--right, 10px);
+  top: var(--top, -3px);
+  filter: drop-shadow(2px 3px 2px rgba(0, 0, 0, 0.5));
+}
+.ribbon > .content1 {
+  color: white;
+  /* font-size: 1.25rem; */
+  text-align: center;
+  font-weight: 600;
+  background: var(--color, #64c952)
+    linear-gradient(45deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.25) 100%);
+  padding: 8px 2px 4px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0 100%);
+  width: var(--width, 32px);
+  height: var(--height, 40px);
+  transition: clip-path 1s, padding 1s, background 1s;
+}
+.ribbon.check > .content1 {
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 20px),
+    40% 100%,
+    0 calc(100% - 12px)
+  );
+}
+
+/* ======= */
+
+/* Tables */
+
+
+.table__checkbox__col {
+  width: 5%;
+  text-align: center;
+}
+.table__tierName__col {
+  width: 30%;
+}
+.table__title__col {
+  width: 40%;
+}
+.table__createdOn__col {
+  width: 15%;
+  text-align: center;
+}
+.table__groupName__col {
+  width: 15%;
+  text-align: center;
+}
+.table__viewTier__col {
+  width: 10%;
+  text-align: center;
+}
+.table__createdAt__col {
+  width: 15%;
+  text-align: center;
+}
+.table__status__col {
+  width: 10%;
+  text-align: center;
+}
+.table__actions__col {
+  width: 15%;
+  text-align: center;
+}
+
+/* End Tables */
+
+.jumbotron {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: #ffffff;
+  border-radius: 0.6rem;
+}
+@media (min-width: 576px) {
+  .jumbotron {
+    padding: 4rem 2rem;
+  }
+}
+
+.jumbotron-fluid {
+  padding-right: 0;
+  padding-left: 0;
+  border-radius: 0;
+}
+
+.jumbotron p {
+  font-size: 14px;
+}
+
+.designSettingHeading {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.tutorialFooter {
+  background-color: white;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  word-spacing: 2px;
+  border-radius: 0.6rem;
+}
+.custom_card {
+  transition: 0.4s;
+}
+.custom_card:hover {
+  transform: scale(1);
+}
+.modal__settings__table,
+.modal__settings__table td {
+  /* margin: 20px; */
+  border-collapse: collapse;
+}
+.settings__table,
+.settings__table td {
+  margin: 20px;
+  border-collapse: collapse;
+  border: 1px solid black;
+  line-height: 1.5;
+}
+.modal__settings__paddingTop{
+  margin-top: 20px;
+}
+.preview__addToCart button{
+  height: 40px;
+  width: 120px;
+  background-color: white;
+  border-radius: 2px;
+}
+.preview__heading p{
+  font-size: 26px;
+}
+.modal__settings__table__border__width{
+  width: inherit;
+}
+.preview__container{
+  padding: 20px;
+  background-color: rgba(215, 215, 215, 0.64);
+}
+.modal__settings__table__border__width4{
+  width: max-content;
+}
+.modal__settings__table__border{
+  padding: 10px;
+  border: 2px solid red;
+}
+.settings__table td,
+.modal__settings__table td {
+  /* padding: 5px; */
+  text-align: center;
+  line-height: 1.5;
+}
+
+.Polaris-Layout__Section--oneThird {
+  display: inline;
+}
+
+.half-text-boxes {
+  width: 48%;
+}
+#Default-button {
+  margin-left: 15px;
+}
+.view-products-btn {
+  color: #006fbb;
+}
+.view-products-btn:hover {
+  border-bottom: 1px solid #006fbb;
+}
+
+
+
+/*  pos page css start  */
+
+.pos_integration{display: flex;justify-content: space-between; flex-direction: row; align-items: center;}
+
+.padding_all4{padding: 10px 15px;}
+.padding_left15{padding-left: 15px; margin-top: 10px;}
+
+@media(max-width:576px){
+
+.pos_integration{display: flex;justify-content: space-between; flex-direction:column;
+      align-items: flex-start;}
+
+.Polaris-Layout { margin-top: 0px!important; margin-left: -15px !important; padding: 0 0rem !important;}
+       
+}
+
+ 
+ 
+/* Setting page css start  */
+
+.Custome_Stack{display: flex; justify-content: space-between;flex-direction:row; align-items: center;}
+
+.Custome_Stack_Btn{display: flex; justify-content: space-between;flex-direction:row; align-items: center;}
+.custome_input_field{flex: 1; padding-right: 6px; margin-left: 10px; margin-bottom: 15px;}
+ 
+.hr_line{border-bottom: 1px solid rgb(221, 221, 221);margin: 15px;width: 108.4%; position: relative;left: -35px;}
+  
+ .Custome_Stack_Second{display: flex; justify-content: space-between;flex-direction:row; align-items: center;}
+ .input_width{width:100%;margin: 15px 0;}
+  
+@media(max-width:576px){
+.Custome_Stack{display: flex; justify-content: space-between;flex-direction:column; align-items: center;}
+.custome_input_field{flex: 1; padding-right: 3px; margin-left: 5px; margin-bottom: 15px; width: 100%;}
+.mrg_bottom15{margin-bottom: 15px;}
+
+}
+
+
+
+
+/* create.component page css start  */
+.Custom_Location_Add_Btn{display: flex; gap:8px;}
+.Custom_Location_Add_Btn_Item_One{flex:1 1 80%;}
+.Custom_Location_Add_Btn_Item_Two{flex:1 1 auto;}
+.Custome_Radio_Btn{display: flex;gap: 20px;margin: 10px;}
+.mrg_top20{margin-top: 20px;z-index: -1;}
+.Custome_Vertical_Align{display: flex; flex-direction: column;}
+
+.plus_minus_top{margin-top: 40px; position: relative; top: -40px;}
+ 
+.Custom_Stack{ display: grid; margin-left: 5px;  margin-top: 16px;  gap: 15px; grid-template-columns: auto auto;}
+   
+.Custom_Stack_Item{flex: 0 0 auto; min-width: 0;}
+
+.Btn_Display_Inline{display: flex; justify-content: flex-start; gap: 80px;margin-top: 6px;}
+ .Update_TextField_Inline{display: flex; gap: 5px}
+ .Update_TextField_Inline_Item_One{flex: 0 0 23%;}
+ .Update_TextField_Inline_Item_Two{flex: 0 0 50%;}
+ .Update_TextField_Inline_Item_Three{flex: 0 0 23%;}
+  
+ .Plus_Minus_Top18{position: relative; top: -18px;}
+ .Btn_mrg_TB5{margin-top: 5px; margin-bottom: 5px;} 
+ 
+ .samplePicker_Container{position: relative; width:100%;}
+ .dateTimePicker_Container{display: flex;}
+ .dateTimePicker_Container_Item_One{width: 260px;  display: flex;  gap: 3px}
+ .dateTimePicker_Container_Item_Two{width: 160px;  display: flex;  gap: 3px}
+ .BrowseBtn_Align{display: flex; gap:5px;}
+ .BrowseBtn_Align_Item{flex:1 1 auto;}
+  .Create_Page_Right_Text{margin-top: 25px; font-weight: bold; margin-right: 20px; font-size: 16px;}
+ .Create_Page_Left_Text{margin: 0 10px;}
+/*  GuestList component css start */
+
+.NextAndPrevious_Btn{display: flex;align-items: center; justify-content: center; gap:10px;}
+ .mrg_top15{margin-top: 15px;}
+.Existing_Tagged_Customer{display: flex;  gap: 10px;flex-direction: row;flex-wrap: wrap;align-items: center;}
+.Existing_Input_Width{width:90%;}
+ 
+ /*  update.componet css start  */
+ 
+ .Custom_Btn_Inline{display: flex;justify-content: space-between; flex-wrap: wrap;}
+  
+.Custom_TextBox{display: flex;  flex-wrap: wrap; flex-direction: column;}
+ 
+.Custom_Inner_TextBox{display: flex;flex-wrap: wrap;gap: 10px;}
+ .Custom_Text_Btn_Wrap{display: grid; grid-template-columns: auto auto; gap: 10px;} 
+  
+ .Add_Location_Tag{margin-top: 5px;  display: flex;gap: 8px;flex-wrap: wrap;}
+ .mrg_top10{margin-top: 10px;}
+  
+ .Custom_Inner_Value_Container{display: flex;gap: 5px; margin-top: 10px;}
+  
+  .Custom_Inner_Value_Container_Item_One{flex: 1 1 auto;}
+
+  .Custom_Inner_Value_Container_Item_Two{flex: 0 0 55%;}
+
+  .Top_Minus_Plus{margin-bottom: 25px; position: relative;top: -8px}
+    
+    
+  
+ @media(max-width:576px){
+  .Custom_Location_Add_Btn{display: flex; gap:8px;flex-direction: column;}
+  .Custom_Text_Btn_Wrap{display: grid; grid-template-columns: auto; gap: 10px;} 
+
+  .Custom_Inner_Value_Container{display: flex;gap: 5px; margin-top: 10px;flex-direction: column;}
+ } 
+  
+ /*  updateNormalTier.componet css start  */
+  .Text_filed_align{display: flex; flex-wrap: wrap;gap: 10px;margin-top: 12px;}
+   .Text_filed_align_Contaier{display: flex;gap: 7px;}
+    
+   .Text_filed_align_Contaier_Item_One{flex: 0 0 22%;} 
+   .Text_filed_align_Contaier_Item_Two{flex: 0 0 55%;} 
+.Thumbnail_Text{display: flex; flex-wrap: wrap;gap: 10px;}
+    
+  
+/* ConfigLayout css start   */
+
+.btn_mrg_value{margin-top: 20px; margin-left: 50px; display: flex; gap:10px;}
+  
+.Display_Setting_Padding_Left{padding-left: 10px;}
+.Display_Setting_Padding_Right{padding-right: 5px;}
+  @media(max-width:480px){
+    .btn_mrg_value{margin-top: 20px; margin-left: 5px; display: flex; gap:5px;}
+
+  }
+    
+  
+  /* guestlist.component css start   */
+
+  .GuestList_BtnAlign{display: flex; align-items: center; justify-content: center;  gap: 15px; padding:15px 0px;}
+  .GuestList_padding{padding: 15px 0;}
+
+
+  /*  customerlist.component.js css start */
+  .Card_Section_padding{padding:15px 0;}
+  
+/*  subtotal folder EidtPlan css start  */
+
+.Edit_Custom_TextBox{display: flex; gap:4px;}
+.Edit_Custom_TextBox_Items{flex:0 0 24%;}
+.Edit_Custom_TextBox_Items_Width{width:50%}
+.Plus_Minue_Top{position: relative;  top: -23px; margin-top: 20px;}
+ 
+@media(max-width:576px){
+
+  .Edit_Custom_TextBox{display: flex; gap:5px; flex-direction: column;}
+}
+ 
+
+/* subtotal folder Create  page css start */
+.DiscountType_LookingDiscount{display: flex; justify-content: space-between;}
+
+.Custom_Input_TextField{display: flex;  flex-direction: row;gap: 4px; margin-bottom: 10px;}
+  
+.Custom_Input_TextField_Item{flex:0 0 24%;}
+.Custom_Input_TextField_Item_Width{flex: 0 0 50%;}
+
+.Create_Plus_Minue_Top{margin-bottom: 25px; position: relative; top: -6px;}
+  
+.Create_Custom_Text_Btn{display: flex;   gap: 10px;}
+
+.Create_Custom_Text_Btn_Item{flex: 0 0 80%;}
+
+
+
+@media(max-width:480px){
+.DiscountType_LookingDiscount{display: flex; justify-content: flex-start;align-items: flex-start;
+    flex-direction: column; margin-bottom: 8px;}
+
+.Custom_Input_TextField{display: flex;  flex-direction:column; gap: 5px; margin-bottom: 10px; margin-top: 8px;}
+
+}
+
+
+
+
+/* automatic Discount page css start   */
+.Automatic_BoxWrap{display: flex;flex-wrap: wrap;gap: 10px;margin-top: 8px;}
+
+.Automatic_BoxWrap_Item_One{flex: 0 0 46%;}
+
+.Automatic_BoxWrap_Item_Two{flex: 0 0 49%;}
+
+.Automatic_BoxWrap_Item_Three{flex: 0 0 97%;}
+
+.automatic_Box_Container{display: flex;gap: 4px; margin-top: 8px;}
+.automatic_Box_Container_One{flex: 0 0 22%;}
+.automatic_Box_Container_Two{flex: 0 0 52%;}
+
+.automatio_Minus_Plus{margin-bottom: 25px; position: relative;  top: -8px;}
+  
+ 
+@media(max-width:480px){
+
+  .Automatic_BoxWrap{display: flex;flex-wrap: wrap;gap: 10px;margin-top: 8px; flex-direction: column;}
+
+  .automatic_Box_Container{display: flex;gap: 5px; margin-top: 8px; flex-direction:column;}
+}
+
+
+ 
+  
+@media(max-width:991px){
+
+.Btn_Display_Inline{display: flex; justify-content: flex-start; gap: 5px;margin-top: 6px; flex-direction: column;} 
+
+}
+
+@media(max-width:620px){
+.dateTimePicker_Container{display: flex; flex-direction: column; gap: 6px;}
+.dateTimePicker_Container_Item_Two{width: 260px;  display: flex;  gap: 3px;}
+}
+
+@media(max-width:576px){
+  .Update_TextField_Inline{display: flex; gap: 5px;flex-direction: column;}
+.Create_Page_Right_Text{position: absolute; left: 2px;top: 55px;font-size: 14px;font-weight: 600;}
+.Create_Page_Left_Text{font-size: 12px;}
+}
+
+@media(max-width:380px){
+  .dateTimePicker_Container_Item_One{width: 170px;  display: flex;  gap: 3px;}
+  .dateTimePicker_Container_Item_Two{width: 170px;  display: flex;  gap: 3px;}
+  }

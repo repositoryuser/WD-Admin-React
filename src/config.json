@@ -1,0 +1,9 @@
+{
+    "APIURL": "http://localhost:8086",
+    "APIURL_test": "http://localhost:8086",
+    "APIURL_live":"https://ctdadmin.anncode.com",
+    "CTD_MAIN_APIURL_live":"https://wholesale.apptiv.in",
+    "CTD_MAIN_APIURL_live_test":"http://localhost:8080",
+    "APP_NAME" : "AT-Wholesale Admin"
+
+}   

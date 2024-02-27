@@ -1,0 +1,269 @@
+#ResourceListContainer {
+  max-height: 200px;
+  position: relative;
+  overflow: overlay;
+  border: 1px solid #e7e7e7;
+}
+
+.productSeletionBarContainer {
+  max-height: 120px;
+  position: relative;
+  overflow: overlay;
+  border: 1px solid #e7e7e7;
+  padding-bottom: 10px;
+  padding-left: 5px;
+}
+
+#plusMinusButtonDiv {
+  margin-top: 10px;
+}
+
+#minusDiv {
+  margin-left: 5px;
+}
+
+.productSeletionBarSpanMain {
+  padding: 5px;
+}
+
+.productSeletionBarSpan1 {
+  margin: 10px 0 0 0;
+}
+
+.submitBtnText {
+  float: left;
+  padding: 5px;
+}
+/* .Polaris-ResourceList__CheckableButtonWrapper{
+    margin-top: -36px;
+} */
+.Polaris-ResourceList__HeaderWrapper.Polaris-ResourceList__HeaderWrapper--hasSelect {
+  display: none;
+}
+.thead-th {
+  font-size: 16px;
+}
+.table-thead {
+  margin-top: 50px;
+  text-align: left;
+}
+.custom-margin-bottom {
+  margin-bottom: 10px;
+}
+
+
+/* ----------Heading Title Style-------------- */
+.Polaris-Header-Title{padding-left:25px!important;}
+
+
+.logout_btn{position: absolute!important; right: 0%!important;top: 126%!important;}
+.Active_btn{position: absolute!important; right: 19%!important;  top: 5%!important;}
+    
+.seller_list_heading{position: absolute;top: 30px; left: 52px;}
+.seller_mainHeading{font-size: 24px;font-weight: 500;}
+
+
+
+.search_btn{position:relative;left:30px;}    
+    
+
+/* ----------Table Data Show Dynamic css add--------------- */
+.tc{text-align: center;}
+.list_status_left25{position: relative; left: 25px;}
+
+/* .seller_list_shopHeading{width:4%;} */
+
+
+/* ----------overlay--------------- */
+.list-page-overlay {
+  background: transparent;
+  opacity: 0.6;
+  height: 100%;
+  width: 100%;
+  display: block;
+  z-index: 999;
+  pointer-events: none;
+}
+.list-page-overlay-visible {
+  display: block;
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+  z-index: 999999;
+  pointer-events: visible;
+}
+.loading-spinner {
+  margin-top: 23%;
+  margin-left: 25%;
+  position: fixed;
+}
+.loading-modal-spinner {
+  position: fixed;
+  margin-top: 1%;
+  margin-left: 20%;
+}
+.Polaris-Button__Text a {
+  color: white;
+  text-decoration: none;
+}
+.seller__list__table__tableHeading,
+.theme__list__table__tableHeading,
+.asset__list__table__tableHeading {
+  font-weight: bold;
+}
+/* .seller__list__table__shopURL {
+  width: 40%;
+  word-break: break-word;
+} */
+
+.seller__list__table__tableSerialHeading {
+  width:4%;
+    word-break: break-word;
+  } 
+
+.seller__list__table__shopURL {
+width:30%;
+  word-break: break-word;
+}
+.seller__list__table__shopName {
+width: 15%; 
+  word-break: break-word;
+}
+.seller__list__table__installDate {
+   width: 15%;
+  word-break: break-word;
+}
+.seller__list__table__installShopifyPlane {
+  width: 10%;
+  word-break: break-word;
+}
+
+.seller__list__table__installCtdPlane {
+  width: 9%;
+  word-break: break-word;
+}
+
+.seller__list__table__installStatus {
+  width: 10%;
+  word-break: break-word;
+}
+.seller__list__table__action {
+  width: 8%;
+  text-align:right;
+}
+
+.theme__list__table__createdAt {
+  width: 20%;
+  word-break: break-word;
+  padding: 10px;
+}
+.theme__list__table__name {
+  width: 20%;
+  word-break: break-word;
+}
+.theme__list__table__role {
+  width: 15%;
+  word-break: break-word;
+}
+.theme__list__table__updatedAt {
+  width: 18%;
+  word-break: break-word;
+}
+.theme__list__table__themeId {
+  width: 17%;
+  word-break: break-word;
+}
+.theme__list__table__action {
+  width: 10%;
+  text-align: center;
+}
+
+.asset__list__table__key {
+  width: 30%;
+  word-break: break-word;
+  padding: 10px;
+}
+.asset__list__table__contentType {
+  width: 25%;
+  word-break: break-word;
+}
+.asset__list__table__createdAt {
+  width: 17%;
+  word-break: break-word;
+}
+.asset__list__table__updatedAt {
+  width: 18%;
+  word-break: break-word;
+}
+.asset__list__table__action {
+  width: 10%;
+  text-align: center;
+}
+
+.key-selection-div{
+  padding: 0 0 20px 30px;
+}
+.key-display-text{
+  float: left;
+  padding-right: 20px;
+}
+.key-select-div{
+  float: left;
+  min-height: 20px;
+  width: 30%;
+  margin-right: 20px;
+}
+.key-select{
+  height: 35px;
+  width: 100%;
+  font-size: 18px;
+  padding-left: 10px;
+}
+#PolarisTextField1{
+  font-size: 18px;
+}
+.CodeMirror{
+  height: 800px !important;
+}
+
+
+
+
+
+/* table css */
+.table_top_arrow{position: relative;
+  top: 30px;
+  left: -74%;
+  font-size: 15px;background-color: #008060;cursor: pointer;padding: 4px 12px;
+  color: #fff;box-shadow: 0px 0px 4px 0px #000000a1;border-radius: 12px;}
+  
+
+ .table_serach_box{width:58%;float:left;position: relative;right: 20px;padding: 0 20px;}
+
+::placeholder{font-size: 14px!important;}
+.mrg_top15{margin-top: 15px;}
+.table_bg_white{background-color: #fff;}
+.seller_tableHeading{width: 5%;overflow-wrap: anywhere;font-weight: 700;}
+.seller_tableUrl{width: 30%; overflow-wrap: anywhere;font-weight: 700;}
+.seller_tableShopeName{width: 14%; overflow-wrap: anywhere;font-weight: 700;}
+.seller_tableInstallDate{width: 14%;overflow-wrap: anywhere;font-weight: 700;}
+.seller_tableShopifyPlane{width: 9%; overflow-wrap: anywhere;font-weight: 700;}
+.seller_tableCtdPlane{width: 9%; overflow-wrap: anywhere;font-weight: 700;}
+.seller_tableInstallStatus{width: 9%; overflow-wrap: anywhere;font-weight: 700;}
+.seller_tableAction{width: 8%;overflow-wrap: anywhere;font-weight: 700;}
+
+
+.shop_heading{width: 3%; overflow-wrap: anywhere;}
+.shop_url{width: 30%;overflow-wrap: anywhere;}
+
+.shop_name{width: 15%; overflow-wrap: anywhere;}
+.shop_installdate{width: 15%; overflow-wrap: anywhere;}
+.shop_plane{width: 10%;overflow-wrap: anywhere;}
+.shop_shopplane{width: 10%; overflow-wrap: anywhere;}
+.shop_action{width: 8%; overflow-wrap: anywhere;}
+.shop_status{width: 8%; overflow-wrap: anywhere;}
+
+.action_value_left{position: relative;  left: 18px;}
+
+.table_right{position: relative; right:15px;}
+ 

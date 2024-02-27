@@ -1,0 +1,108 @@
+.login__div {
+  background: url("./FeaturedBanner.jpg");
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+    top: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+.bg__layer {
+  background: rgba(163, 165, 160, 0.3);
+  min-height: 100vh;
+  padding-top: 10%;
+}
+.bg__layer h1 {
+  color: rgb(0 162 255);
+  font-weight: 600;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #4d1a1a;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-align: center;
+  padding: 1em 0 1em 0;
+  font-size: 4rem;
+}
+.login__div .card {
+  padding: 20px;
+  color: white;
+  max-width: 400px;
+  margin: 0 auto;
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: -1px 4px 28px 0px rgb(0 0 0 / 75%);
+}
+.login__div .app__logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.login__div .app__logo img {
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 5px;
+}
+.login__div .login__input {
+  margin: 0 0 1em;
+  padding: 0.8em 1em;
+  background: rgba(255, 255, 255, 0.94);
+}
+.login__div .login__input .fa {
+  color: #222;
+  width: 22px;
+}
+
+.login__div .login__input .username__input,
+.login__div .login__input .password__input {
+  outline: none;
+  font-size: 15px;
+  color: #222;
+  border: none;
+  width: 90%;
+  display: inline-block;
+  background: transparent;
+  letter-spacing: 1px;
+}
+.login__div .login__btn {
+  background: #443f77;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 0.8em 2em;
+  letter-spacing: 1px;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  width: 100%;
+}
+
+/* ========================================= */
+
+.Polaris-DataTable .plans-icon-tr td {
+  position: sticky;
+  top: -1px;
+  z-index: 5;
+}
+.Polaris-DataTable .plans-icon-tr .Polaris-Heading {
+  display: flex;
+  align-items: center;
+}
+
+.subscribeBtn {
+  margin-left: 30% !important;
+}
+
+.col-header-p-tag {
+  margin: 0 !important;
+}
+
+.help-icon {
+  margin-left: 5px;
+}
