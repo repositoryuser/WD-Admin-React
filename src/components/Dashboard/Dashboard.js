@@ -364,7 +364,7 @@ const Dashboard = () => {
                                 <DataTable
                                     columnContentTypes={["text", "numeric", "numeric", "numeric", "numeric"]}
                                     headings={[
-                                        <Text fontWeight="bold">CTD Plan's</Text>,
+                                        <Text fontWeight="bold">WD Plan's</Text>,
                                         <Text fontWeight="bold">Seller</Text>,
                                         <Text fontWeight="bold">Active Seller</Text>,
                                         <Text fontWeight="bold">Price</Text>,
